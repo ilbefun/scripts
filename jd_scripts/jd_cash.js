@@ -351,7 +351,7 @@ function showMsg() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    /*  
+      
     $.get({url: `https://code.chiang.fun/api/v1/jd/jdcash/read/${randomCount}/`, 'timeout': 10000}, (err, resp, data) => {
       try {
         if (err) {
@@ -366,10 +366,12 @@ function readShareCode() {
       } catch (e) {
         $.logErr(e, resp)
       } finally {
-        resolve(data);
+        console.log('---------dataaaaaaaa:'+JSON.stringify(data))
+        // resolve(data);
       }
     })
-    */
+    
+    return
     resolve([
       {"inviteCode":"JB4_bOi0buEi82nWyXQT3w","shareDate":"IRs1bey1Z_o"}
     ])
