@@ -50,7 +50,7 @@ let allMessage = '';
   }
   await requireConfig()
   await getAuthorShareCode();
-  await getAuthorShareCode2();
+  // await getAuthorShareCode2();
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
       cookie = cookiesArr[i];
@@ -390,6 +390,7 @@ function shareCodesFormat() {
       const tempIndex = $.index > inviteCodes.length ? (inviteCodes.length - 1) : ($.index - 1);
       $.newShareCodes = inviteCodes[tempIndex].split('@');
       let authorCode = deepCopy($.authorCode)
+      console.log('author-------------------'+JSON.stringify(authorCode))
       $.newShareCodes = [...(authorCode.map((item, index) => authorCode[index] = item['inviteCode'])), ...$.newShareCodes];
     }
     const readShareCodeRes = await readShareCode();
