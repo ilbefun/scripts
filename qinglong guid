@@ -74,6 +74,7 @@ docker exec -it qinglong ql raw https://ghproxy.com/https://raw.githubuserconten
 docker exec -it qinglong ql raw https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/jd_europeancup.js
 docker exec -it qinglong ql raw https://raw.githubusercontent.com/Wenmoux/scripts/wen/jd/jd_qqxing.js
 docker exec -it qinglong ql raw http://nm66.top/jd_yqyl.js
+docker exec -it qinglong ql raw https://github.com/ilbefun/scripts/raw/main/jd_scripts/jd_cash.js
 
 删除7天前的所有日志
 docker exec -it qinglong ql rmlog 7
